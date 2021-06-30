@@ -23,6 +23,7 @@
             </div>
             <div class="game-description">
                 <p class="game-name">{{ game.name }}</p>
+                <p class="game-price">$59</p>
                 <div class="game-platforms">
                     <img *ngFor="let gamePlatform of game.parent_platforms" class="game-platform"
                         src="../../../assets/images/platforms/{{ gamePlatform.platform.slug }}.svg"

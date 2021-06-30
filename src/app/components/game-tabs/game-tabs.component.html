@@ -32,19 +32,10 @@
                     </span>
                 </ng-container>
             </p>
-        </mat-tab>
-        <mat-tab label="Screenshots" *ngIf="game.screenshots?.length">
-            <img class="game-screenshot" *ngFor="let screenshot of game.screenshots" src="{{ screenshot.image }}"
-                alt="screenshot" />
-        </mat-tab>
-        <mat-tab label="Trailers" *ngIf="game.trailers?.length">
-            <video class="game-trailer" controls *ngFor="let trailer of game.trailers">
-                <source src="{{ trailer.data?.max }}" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </mat-tab>
-        <mat-tab label="Buy">
-            <button>BUY</button>
+            <p class="game-price">Price: $59</p>
+            <button class="shopping-cart" (click)="addItemToCart(game.name); addNewEmitterItem(game.name)">
+                Add Item To Shopping Cart
+            </button>
         </mat-tab>
     </mat-tab-group>
 </div>

@@ -91,6 +91,12 @@
         overflow: hidden;
     }
 
+    &-price {
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
     &-platforms {
         display: flex;
     }

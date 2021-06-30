@@ -1,6 +1,6 @@
 .game {
     &-tabs {
-        background: rgb(63 81 181 / 61%);
+        background: rgb(5 16 81 / 61%);
         color: #fff;
         text-align: left;
         padding: 10px;
@@ -47,18 +47,27 @@
     &-description {
         padding: 20px;
     }
+}
 
-    &-screenshot {
-        margin-top: 5px;
-        width: calc(50% - 10px);
+.shopping-cart {
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background: #3f51b5;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    cursor: pointer;
 
-        &:nth-child(even) {
-            margin-left: 10px;
-        }
+    &:hover {
+        color: #3f51b5;
+        background-color: #fff;
+        border: 1px solid #3f51b5;
     }
+}
 
-    &-trailer {
-        width: 100%;
-        margin: 20px 0;
-    }
+.game-price {
+    margin-left: 20px;
 }

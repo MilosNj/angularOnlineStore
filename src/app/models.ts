@@ -11,8 +11,7 @@ export interface Game {
     parent_platforms: Array<ParentPlatform>;
     publishers: Array<Publisher>;
     ratings: Array<Rating>;
-    screenshots: Array<Screenshot>;
-    trailers: Array<Trailer>;
+    isAdded: boolean;
 }
 
 export interface APIResponse<T> {

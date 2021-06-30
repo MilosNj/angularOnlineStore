@@ -9,6 +9,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { GaugeModule } from 'angular-gauge';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
@@ -18,6 +19,7 @@ import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor'
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor';
 import { DetailsComponent } from './components/details/details.component';
 import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
     SearchBarComponent,
     HomeComponent,
     DetailsComponent,
-    GameTabsComponent
+    GameTabsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
     MatFormFieldModule,
     MatSelectModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [
     {
