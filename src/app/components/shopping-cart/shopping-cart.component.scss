@@ -1,0 +1,48 @@
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+}
+
+td {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header {
+    font-size: 22px;
+    padding-bottom: 15px;
+    color: rgb(51, 51, 51);
+}
+
+button {
+    margin-right: 5px;
+    float: right;
+    border: none;
+    outline: none;
+    background: #3f51b5;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        color: #3f51b5;
+        background-color: #fff;
+        border: 1px solid #3f51b5;
+    }
+}
+
+.buttons {
+    display: flex;
+}
+
+.total {
+    padding-top: 15px;
+}

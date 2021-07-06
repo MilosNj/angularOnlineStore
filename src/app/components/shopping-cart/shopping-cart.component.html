@@ -1,8 +1,33 @@
 <div class="shopping-cart">
     <div class="main">
         <app-game-tabs style="display: none;" (newItemEvent)="addGameName($event)"></app-game-tabs>
-        <p style="color: white; font-size: 24px">
-            Array: {{ gameNames }}
-        </p>
+        <table class="mat-elevation-z8">
+            <ng-container>
+                <tr>
+                    <td class="header">
+                        Name
+                    </td>
+                    <td class="header">
+                        Price
+                    </td>
+                </tr>
+                <tr *ngFor="let game of gameNames">
+                    <td>{{ game }}</td>
+                    <td>$59</td>
+                </tr>
+                <tr>
+                    <td class="total">
+                        TOTAL PRICE:
+                    </td>
+                    <td class="total">
+                        ${{ gameNames.length * 59 }}
+                    </td>
+                </tr>
+            </ng-container>
+        </table>
+        <div class="buttons">
+            <button (click)="buyCart()">Buy Cart</button>
+            <button (click)="emptyCart()">Empty Cart</button>
+        </div>
     </div>
 </div>
